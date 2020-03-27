@@ -93,8 +93,8 @@ const Project  = props => {
         const links = <div className="project__links">
         <h1 className="project__links-title">Project Links</h1>
         
-        {project.liveLink ? <a href={project.liveLink} target="_blank"> <button className="project__links-github">View Live</button></a> : <div></div>}        
-        <a target="_blank" href={project.codeLink}><button className="project__links-github">View Code</button></a>
+        <a href={project.liveLink} target="_blank"  rel="noopener noreferrer"> <button className="project__links-github">View Live</button></a>        
+        <a  href={project.codeLink} target="_blank" rel="noopener noreferrer"><button className="project__links-github">View Code</button></a>
         </div>
 
         switch (page) {
@@ -113,7 +113,10 @@ const Project  = props => {
                     <MediaQuery minWidth={1000}>
                     <div className="project__name">
                         <h1 className="project__name-head">{props.name}</h1>
-                        {pagination()}
+                        <a href={project.liveLink} target="_blank"  rel="noopener noreferrer"> <button className="project__links-github">View Live</button></a>        
+        <a target="_blank" rel="noopener noreferrer" href={project.codeLink}><button className="project__links-github">View Code</button></a>
+        
+                     
                     </div>                
                     </MediaQuery>
                 <div className="project__summary">

@@ -13,7 +13,7 @@ import projectData from "./utils/projectData"
 import links from "./utils/links"
 
 const Wrapper = () => {
-    const cvRoute = "https://lhuddlesto-api.herokuapp.com"
+    const cvRoute = "https://"
 
     return (
         <Router>

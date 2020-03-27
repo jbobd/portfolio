@@ -10,7 +10,7 @@ import links from "../utils/links"
 import "../styles/scss/nav.scss"
 
 const Nav = () => {
-    const cvRoute = "https://lhuddlesto-api.herokuapp.com"
+    const cvRoute = "https://"
     const [hamburgerMenu, setHamburgerMenu] = useState(false)    
 
     const handleHamburgerState = () => {
@@ -33,7 +33,7 @@ const Nav = () => {
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" exact to='/'>Home</NavLink></li>
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" to='/projects'>Projects</NavLink></li>
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" exact to='/'></NavLink></li>
-                            <li className="mobileMenu__list-item"><a className="mobileMenu__link" href="https://lhuddlesto-api.herokuapp.com">Resume</a></li>
+                            <li className="mobileMenu__list-item"><a className="mobileMenu__link" href="https://">Resume</a></li>
                         </ul>
                     </nav>
                 </div>

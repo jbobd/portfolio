@@ -62,20 +62,8 @@ const projectData = [
         },
         codeLink: 'https://github.com/lhuddlesto/anime-quote-machine',
         liveLink: 'https://anime-quote-generator.herokuapp.com/'
-    },
-    {
-        name: 'React Calculator',
-        summary: 'Designed and developed a fully functional calculator with 10 digits, typical math operators and a second page with more advanced operators like percentage, exponents, powers, pi, and more.  Implemented responsive design with Rem units to ensure that the application function as cleanly on mobile devices.',
-        date: 'February 2019 - March 2019',
-        images: 3,
-        skills: {
-            'Front-End Development': ['React', 'JavaScript (ES6)', 'CSS3 (Sass)', 'HTML5'],
-            'Design': ['Wireframing', 'Responsive Web Design', 'Adobe XD'],
-            'Quality Assurance & Testing': ['Manual Testing']
-        },
-        codeLink: 'https://github.com/lhuddlesto/react-calculator',
-        liveLink: 'https://react-calculator-application.herokuapp.com/'
-    }*/
+    },*/
+    
     {
         name: "L'armoire E-commerce",
         summary: "L'armoire is a complete E-commerce project, done with React, Redux, hooks, firebase authentication and storage and stripe payments",
@@ -84,9 +72,18 @@ const projectData = [
             'Front-End Development': ['React', 'Redux', 'Firebase','CSS'],
             'Back-End Development': ['Firebase','Stripe','Node.js', 'Express']
         },
-        codeLink: 'hhttp://github.com/bobsdeigh/larmoire/',
+        codeLink: 'https://github.com/bobsdeigh/larmoire/',
         liveLink: 'https://larmoire.herokuapp.com/'
 
+    },
+    {
+        name: 'React ToDos',
+        summary: 'My first and classic react project',
+        skills: {
+            'Front-End Development': ['React', 'JavaScript (ES6)']
+        },
+        codeLink: 'https://github.com/bobsdeigh/react_todolist',
+        liveLink: 'https://'
     }
 ]
 
