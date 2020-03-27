@@ -1,0 +1,68 @@
+
+
+.homeContent {
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 65% auto;
+    position: relative;
+    clear:both;
+
+    &__p2 {
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    &__p3 {
+        margin-top:2rem;
+        margin-bottom:2rem;
+    }
+    &__main {
+        width: 70%;
+    }
+
+    &__main-title {
+        text-shadow: 3px 3px rgba(49, 49, 49, 0.10)
+    }
+
+    &__main-title, &__main-subtitle, &__main-body, &__contact {
+        margin-left: 7rem;
+    }
+
+    &__main-body {
+        width: 50rem;
+        margin-bottom: 12rem;
+    }
+
+    &__main-title {
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+        font-size: 4.5rem;
+    }
+
+    &__main-subtitle {
+        font-size: 2.4rem;
+        margin-left:0;
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__cam {
+        height: 90%;
+        width: 90%;
+        object-fit: cover;
+    }
+    
+    &__contact {
+        @include button-styling(#ffffff, $color-primary, $color-primary-light);
+        width: 25rem;
+    }
+}
+
