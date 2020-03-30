@@ -13,7 +13,7 @@ import projectData from "./utils/projectData"
 import links from "./utils/links"
 
 const Wrapper = () => {
-    const cvRoute = "https://"
+    const cvRoute = "https://drive.google.com/file/d/11sJ4EQKHYH2bZ0RPQBn9v3ROiPKkyXnl/view?usp=sharing"
 
     return (
         <Router>
