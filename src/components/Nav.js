@@ -33,7 +33,7 @@ const Nav = () => {
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" exact to='/'>Home</NavLink></li>
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" to='/projects'>Projects</NavLink></li>
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" exact to='/'></NavLink></li>
-                            <li className="mobileMenu__list-item"><a className="mobileMenu__link" href="https://">Resume</a></li>
+                            <li className="mobileMenu__list-item"><a className="mobileMenu__link" href="https://drive.google.com/file/d/11sJ4EQKHYH2bZ0RPQBn9v3ROiPKkyXnl/view?usp=sharing">Resume</a></li>
                         </ul>
                     </nav>
                 </div>
