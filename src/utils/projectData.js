@@ -72,7 +72,7 @@ const projectData = [
             'Front-End Development': ['React', 'Redux', 'Firebase','CSS'],
             'Back-End Development': ['Firebase','Stripe','Node.js', 'Express']
         },
-        codeLink: 'https://github.com/bobsdeigh/larmoire/',
+        codeLink: 'https://github.com/jbobd/larmoire/',
         liveLink: 'https://larmoire.herokuapp.com/'
 
     },
@@ -82,7 +82,7 @@ const projectData = [
         skills: {
             'Front-End Development': ['React', 'JavaScript (ES6)']
         },
-        codeLink: 'https://github.com/bobsdeigh/react_todolist',
+        codeLink: 'https://github.com/jbobd/react_todolist',
         liveLink: 'https://'
     }
 ]

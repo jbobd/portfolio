@@ -1,6 +1,6 @@
 const links = {
     lance: {
-        github: 'http://github.com/bobsdeigh/',
+        github: 'http://github.com/jbobd/',
         linkedin: 'https://www.linkedin.com/in/jbobd/'
 }
 };
