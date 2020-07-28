@@ -63,13 +63,24 @@ const projectData = [
         codeLink: 'https://github.com/lhuddlesto/anime-quote-machine',
         liveLink: 'https://anime-quote-generator.herokuapp.com/'
     },*/
-    
+    {
+        name: "Tiny MercadoLibre ",
+        summary: "Tiny ML is a tiny clone of Mercado Libre, South America biggest MarketPlace. It uses MercadoLibre API's for searching and fetching product data",
+        images: 4,
+        skills: {
+            'Front-End Development': ['React', 'React Hooks','SCSS'],
+            'Back-End Development': ['Node.js', 'Express', 'REST APIs']
+        },
+        codeLink: 'https://github.com/jbobd/ml-test',
+        liveLink: 'https://jb-ml-test.herokuapp.com/'
+
+    },
     {
         name: "L'armoire E-commerce",
         summary: "L'armoire is a complete E-commerce project, done with React, Redux, hooks, firebase authentication and storage and stripe payments",
         images: 4,
         skills: {
-            'Front-End Development': ['React', 'Redux', 'Firebase','CSS'],
+            'Front-End Development': ['React', 'Redux', 'Firebase','SCSS'],
             'Back-End Development': ['Firebase','Stripe','Node.js', 'Express']
         },
         codeLink: 'https://github.com/jbobd/larmoire/',
