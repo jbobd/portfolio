@@ -10,7 +10,7 @@ import links from "../utils/links"
 import "../styles/scss/nav.scss"
 
 const Nav = () => {
-    const cvRoute = "https://drive.google.com/open?id=12_wpXXlli_I4UBMJLoTgW-anClHJUxqU"
+    const cvRoute = "https://drive.google.com/file/d/10NZl3Q9JEdgrHzVI-_fLCU5mRz38TNtS/view?usp=sharing"
     const [hamburgerMenu, setHamburgerMenu] = useState(false)    
 
     const handleHamburgerState = () => {
