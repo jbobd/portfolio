@@ -184,10 +184,10 @@ const Project = (props) => {
               </SRLWrapper>
             </div>
             <h1 className="project__name-mobile">{props.name}</h1>
-            {renderInfo(projectPage)}
+           {renderInfo(projectPage)} 
           </MediaQuery>
 
-          <MediaQuery maxWidth={1000}>
+         {/*  <MediaQuery maxWidth={1000}>
             <div className="project__links">
               <h2 className="project__links-title">Project Links</h2>
 
@@ -203,7 +203,7 @@ const Project = (props) => {
                 <button className="project__links-github">View Code</button>
               </a>
             </div>
-          </MediaQuery>
+          </MediaQuery> */}
         </div>
       </div>
     </div>
