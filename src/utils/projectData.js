@@ -1,5 +1,5 @@
 const projectData = [
-   /* {
+  /* {
         name: 'Chatter',
         summary: 'Chatter is a real-time chat and communication application built with Node.js, Express and Socket.io.  It uses the Handlebars templating engine to render information processed on the server and client-side.  The application is also mobile responsive, and allows users to create chat rooms to discuss topics with friends, family, and more.',
         date: 'July 2019 - July 2019',
@@ -63,39 +63,62 @@ const projectData = [
         codeLink: 'https://github.com/lhuddlesto/anime-quote-machine',
         liveLink: 'https://anime-quote-generator.herokuapp.com/'
     },*/
-    {
-        name: "Tiny MercadoLibre ",
-        summary: "Tiny ML is a tiny clone of Mercado Libre, South America biggest MarketPlace. It uses MercadoLibre API's for searching and fetching product data",
-        images: 4,
-        skills: {
-            'Front-End Development': ['React', 'React Hooks','SCSS'],
-            'Back-End Development': ['Node.js', 'Express', 'REST APIs']
-        },
-        codeLink: 'https://github.com/jbobd/ml-test',
-        liveLink: 'https://jb-ml-test.herokuapp.com/'
-
+  {
+    name: "Tiny MercadoLibre",
+    summary:
+      "Tiny ML is a tiny clone of Mercado Libre, South America biggest MarketPlace.  Node + express backend serve two endpoints for searching and fetching product data, which call MercadoLibre API's. The front end code hits these two endpoints and serve the views.",
+    images: 1,
+    imageArr: [
+      "https://i.ibb.co/6WtnzMc/Screenshot-2020-08-01-at-22-39-18.png",
+      "https://i.ibb.co/wQBjfhg/Screenshot-2020-08-02-at-15-31-55.png",
+    ],
+    skills: {
+      "Front-End Development": ["Javascript", "React with Hooks", "SCSS"],
+      "Back-End Development": ["Node.js", "Express", "REST APIs"],
     },
-    {
-        name: "L'armoire E-commerce",
-        summary: "L'armoire is a complete E-commerce project, done with React, Redux, hooks, firebase authentication and storage and stripe payments",
-        images: 4,
-        skills: {
-            'Front-End Development': ['React', 'Redux', 'Firebase','SCSS'],
-            'Back-End Development': ['Firebase','Stripe','Node.js', 'Express']
-        },
-        codeLink: 'https://github.com/jbobd/larmoire/',
-        liveLink: 'https://larmoire.herokuapp.com/'
-
+    codeLink: "https://github.com/jbobd/ml-test",
+    liveLink: "https://jb-ml-test.herokuapp.com/",
+  },
+  {
+    name: "L'armoire E-commerce",
+    summary:
+      "L'armoire is a complete E-commerce project, done with React, Redux, hooks, firebase authentication and storage and stripe payments",
+    images: 1,
+    imageArr: [
+      "https://i.ibb.co/Ny9W12K/larmoire1.png",
+      "https://i.ibb.co/nmxy2tS/larmoire2.png",
+      "https://i.ibb.co/Tv9X8QK/larmoire3.png",
+    ],
+    skills: {
+      "Front-End Development": ["React", "Redux", "Firebase", "SCSS"],
+      "Back-End Development": ["Firebase", "Stripe", "Node.js", "Express"],
     },
-    {
-        name: 'React ToDos',
-        summary: 'My first and classic react project',
-        skills: {
-            'Front-End Development': ['React', 'JavaScript (ES6)']
-        },
-        codeLink: 'https://github.com/jbobd/react_todolist',
-        liveLink: 'https://'
-    }
-]
+    codeLink: "https://github.com/jbobd/larmoire/",
+    liveLink: "https://larmoire.herokuapp.com/",
+  },
+  {
+    name: "codeWorks",
+    summary:
+      "Tiny IT jobs search platform. Allows to search, add and list coding jobs.",
+    images: 1,
+    imageArr:["https://i.ibb.co/VLc75NP/code-Works1.png","https://i.ibb.co/wpYQrZp/code-Works2.png"],
+    skills: {
+      "Front-End Development": ["Handlebars, CSS"],
+      "Back-End Development": ["Node.js", "Express", "Sequelize", "Postgres"],
+    },
+    codeLink: "https://github.com/jbobd/codeworks",
+    liveLink: "https://fierce-plateau-37149.herokuapp.com/",
+  },
+  {
+    name: "React ToDos",
+    summary: "My first and classic react project",
+    skills: {
+      "Front-End Development": ["React", "JavaScript (ES6)"],
+    },
+    imageArr:[],
+    codeLink: "https://github.com/jbobd/react_todolist",
+    liveLink: "https://",
+  },
+];
 
-export default projectData
+export default projectData;
