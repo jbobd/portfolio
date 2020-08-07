@@ -10,7 +10,7 @@ import links from "../utils/links"
 import "../styles/scss/nav.scss"
 
 const Nav = () => {
-    const cvRoute = "https://drive.google.com/file/d/10NZl3Q9JEdgrHzVI-_fLCU5mRz38TNtS/view?usp=sharing"
+    const cvRoute = "https://drive.google.com/file/d/1hO-5MH8x3ULFs_eh_kc4Vgrgnbqp-qDm/view?usp=sharing"
     const [hamburgerMenu, setHamburgerMenu] = useState(false)    
 
     const handleHamburgerState = () => {
@@ -33,7 +33,7 @@ const Nav = () => {
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" exact to='/'>Home</NavLink></li>
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" to='/projects'>Projects</NavLink></li>
                             <li className="mobileMenu__list-item" onClick={handleHamburgerState}><NavLink className="mobileMenu__link" exact to='/'></NavLink></li>
-                            <li className="mobileMenu__list-item"><a className="mobileMenu__link" href="https://drive.google.com/open?id=1WSu5BfwCOUl_Y-LWkRZwq1inWTdixmgl">Resume</a></li>
+                            <li className="mobileMenu__list-item"><a className="mobileMenu__link" href="https://drive.google.com/file/d/1hO-5MH8x3ULFs_eh_kc4Vgrgnbqp-qDm/view?usp=sharing">Resume</a></li>
                         </ul>
                     </nav>
                 </div>

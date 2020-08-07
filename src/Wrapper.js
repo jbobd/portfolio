@@ -16,7 +16,7 @@ import SimpleReactLightbox from "simple-react-lightbox";
 
 const Wrapper = () => {
   const cvRoute =
-    "https://drive.google.com/file/d/10NZl3Q9JEdgrHzVI-_fLCU5mRz38TNtS/view?usp=sharing";
+    "https://drive.google.com/file/d/1hO-5MH8x3ULFs_eh_kc4Vgrgnbqp-qDm/view?usp=sharing";
 
   return (
     <Router>

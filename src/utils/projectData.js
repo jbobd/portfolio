@@ -64,13 +64,19 @@ const projectData = [
         liveLink: 'https://anime-quote-generator.herokuapp.com/'
     },*/
   {
-    name: "Tiny MercadoLibre",
+    name: "Tiny ML",
     summary:
       "Tiny ML is a tiny clone of Mercado Libre, South America biggest MarketPlace.  Node + express backend serve two endpoints for searching and fetching product data, which call MercadoLibre API's. The front end code hits these two endpoints and serve the views.",
     images: 1,
     imageArr: [
-      "https://i.ibb.co/6WtnzMc/Screenshot-2020-08-01-at-22-39-18.png",
-      "https://i.ibb.co/wQBjfhg/Screenshot-2020-08-02-at-15-31-55.png",
+      {
+        thumb: "https://i.ibb.co/0GSG67Q/screenshot-2020-08-07-at-17-09.jpg",
+        full: "https://i.ibb.co/6WtnzMc/Screenshot-2020-08-01-at-22-39-18.png",
+      },
+      {
+        thumb: "https://i.ibb.co/CtNd1L9/ml2.jpg",
+        full: "https://i.ibb.co/wQBjfhg/Screenshot-2020-08-02-at-15-31-55.png",
+      },
     ],
     skills: {
       "Front-End Development": ["Javascript", "React with Hooks", "SCSS"],
@@ -85,9 +91,18 @@ const projectData = [
       "L'armoire is a complete E-commerce project, done with React, Redux, hooks, firebase authentication and storage and stripe payments",
     images: 1,
     imageArr: [
-      "https://i.ibb.co/Ny9W12K/larmoire1.png",
-      "https://i.ibb.co/nmxy2tS/larmoire2.png",
-      "https://i.ibb.co/Tv9X8QK/larmoire3.png",
+      {
+        thumb: "https://i.ibb.co/Lv6xvJh/larmoire1.jpg",
+        full: "https://i.ibb.co/Ny9W12K/larmoire1.png",
+      },
+      {
+        thumb: "https://i.ibb.co/t38qjTh/larmoire2.jpg",
+        full: "https://i.ibb.co/nmxy2tS/larmoire2.png",
+      },
+      {
+        thumb: "https://i.ibb.co/RzCjqtc/larmoire4.jpg",
+        full: "https://i.ibb.co/Tv9X8QK/larmoire3.png",
+      },
     ],
     skills: {
       "Front-End Development": ["React", "Redux", "Firebase", "SCSS"],
@@ -101,7 +116,10 @@ const projectData = [
     summary:
       "Tiny IT jobs search platform. Allows to search, add and list coding jobs.",
     images: 1,
-    imageArr:["https://i.ibb.co/VLc75NP/code-Works1.png","https://i.ibb.co/wpYQrZp/code-Works2.png"],
+    imageArr: [
+      "https://i.ibb.co/VLc75NP/code-Works1.png",
+      "https://i.ibb.co/wpYQrZp/code-Works2.png",
+    ],
     skills: {
       "Front-End Development": ["Handlebars, CSS"],
       "Back-End Development": ["Node.js", "Express", "Sequelize", "Postgres"],
@@ -115,7 +133,7 @@ const projectData = [
     skills: {
       "Front-End Development": ["React", "JavaScript (ES6)"],
     },
-    imageArr:[],
+    imageArr: [],
     codeLink: "https://github.com/jbobd/react_todolist",
     liveLink: "https://",
   },

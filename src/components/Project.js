@@ -145,7 +145,13 @@ const Project = (props) => {
             <SRLWrapper>
               <div className="project__img-container">
                 {project.imageArr.map((p) => (
-                  <img className="project__img" src={p} alt={props.name} />
+                  <a href={p.full} data-attribute="SRL">
+                    <img
+                      className="project__img"
+                      src={p.thumb}
+                      alt={props.name}
+                    />
+                  </a>
                 ))}
               </div>
             </SRLWrapper>
@@ -175,35 +181,45 @@ const Project = (props) => {
             <div className="project__header">
               <SRLWrapper>
                 <div className="project__img-container">
-                  <img
-                    className="project__img"
-                    src={project.imageArr[0]}
-                    alt={props.name}
-                  />
+                  {project.imageArr.map((p, index) =>
+                    index <= 1 ? (
+                      <a href={p.full} data-attribute="SRL">
+                        <img
+                          className="project__img"
+                          src={p.thumb}
+                          alt={props.name}
+                        />
+                      </a>
+                    ) : (
+                      ""
+                    )
+                  )}
                 </div>
               </SRLWrapper>
             </div>
             <h1 className="project__name-mobile">{props.name}</h1>
-           {renderInfo(projectPage)} 
+            {renderInfo(projectPage)}
           </MediaQuery>
 
-         {/*  <MediaQuery maxWidth={1000}>
-            <div className="project__links">
-              <h2 className="project__links-title">Project Links</h2>
+          {
+            <MediaQuery maxWidth={1000}>
+              <div className="project__links">
+                <h2 className="project__links-title">Project Links</h2>
 
-              {project.liveLink ? (
-                <a href={project.liveLink} target="_blank">
-                  {" "}
-                  <button className="project__links-github">View Live</button>
+                {project.liveLink ? (
+                  <a href={project.liveLink} target="_blank">
+                    {" "}
+                    <button className="project__links-github">View Live</button>
+                  </a>
+                ) : (
+                  <div></div>
+                )}
+                <a target="_blank" href={project.codeLink}>
+                  <button className="project__links-github">View Code</button>
                 </a>
-              ) : (
-                <div></div>
-              )}
-              <a target="_blank" href={project.codeLink}>
-                <button className="project__links-github">View Code</button>
-              </a>
-            </div>
-          </MediaQuery> */}
+              </div>
+            </MediaQuery>
+          }
         </div>
       </div>
     </div>

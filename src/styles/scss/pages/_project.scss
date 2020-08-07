@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     background-color: $color-secondary;
     padding-top: 5%;
     height:100vh;
@@ -63,7 +63,7 @@
   }
 
   &__summary {
-    overflow: scroll;
+    overflow: hidden;
     width: 70%;
     margin-bottom: 2rem;
   }
