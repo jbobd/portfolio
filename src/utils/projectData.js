@@ -117,8 +117,14 @@ const projectData = [
       "Tiny IT jobs search platform. Allows to search, add and list coding jobs.",
     images: 1,
     imageArr: [
-      "https://i.ibb.co/VLc75NP/code-Works1.png",
-      "https://i.ibb.co/wpYQrZp/code-Works2.png",
+      {
+        thumb: "https://i.ibb.co/H4jLkKP/codeworks1.jpg",
+        full: "https://i.ibb.co/VLc75NP/code-Works1.png",
+      },
+      {
+        thumb: "https://i.ibb.co/bBwGDmx/codeworks2.jpg",
+        full: "https://i.ibb.co/wpYQrZp/code-Works2.png",
+      },
     ],
     skills: {
       "Front-End Development": ["Handlebars, CSS"],
