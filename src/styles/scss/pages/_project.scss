@@ -79,7 +79,7 @@
     &-github {
       @include reset-buttons;
       @include button-styling(#ffffff, $color-primary, $color-primary-light);
-      font-family: "Helvetica Neue";
+      font-family: "Helvetica Neue", "Arial";
       width: 24rem;
       margin-bottom: 2rem;
       margin-top: 2rem;

@@ -41,9 +41,9 @@ const Footer = (props) => {
               </NavLink>
             </li>
             <li className="footer__navigation-item">
-              <a className="menu__link" href={props.cvRoute}>
+           {/*    <a className="menu__link" href={props.cvRoute}>
                 Resume
-              </a>
+              </a> */}
             </li>
             <li className="footer__navigation-item">
               <NavLink
