@@ -1,11 +1,14 @@
+a:visited {
+  color: inherit;
+}
 .menu-wrapper {
   height: 9rem;
 }
 
 .cvList {
   //display: flex;
-// left: 125%;
- // top: -75%;
+  // left: 125%;
+  // top: -75%;
   //background-color: blue;
   padding: 0 0 0 30px;
   &-disable {
@@ -68,7 +71,7 @@
       color: $color-grey-dark;
       transition: all 0.1s;
       position: relative;
-      display:flex;
+      display: flex;
 
       &:hover {
         border-bottom: 2px solid $color-primary;
@@ -124,6 +127,7 @@
   }
 
   &__list {
+    color:white;
     display: flex;
     flex-direction: column;
     justify-content: center;

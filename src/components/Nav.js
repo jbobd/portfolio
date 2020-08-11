@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import MediaQuery from "react-responsive";
 import { NavLink } from "react-router-dom";
 // SVGS
@@ -10,14 +10,32 @@ import links from "../utils/links";
 import "../styles/scss/nav.scss";
 
 const Nav = () => {
-  const cvRoute =
-    "https://drive.google.com/file/d/1hO-5MH8x3ULFs_eh_kc4Vgrgnbqp-qDm/view?usp=sharing";
   const [hamburgerMenu, setHamburgerMenu] = useState(false);
+
+  const dropdownRef = useRef(null);
+
   const [cvDisplay, setCvDisplay] = useState(false);
 
   const handleCv = () => {
     setCvDisplay(!cvDisplay);
   };
+
+  useEffect(() => {
+    const pageClickEvent = (e) => {
+      if (
+        dropdownRef.current !== null &&
+        !dropdownRef.current.contains(e.target)
+      ) {
+        setCvDisplay(!cvDisplay);
+      }
+    };
+    if (cvDisplay) {
+      window.addEventListener("click", pageClickEvent);
+    }
+    return () => {
+      window.removeEventListener("click", pageClickEvent);
+    };
+  }, [cvDisplay]);
 
   const handleHamburgerState = () => {
     if (hamburgerMenu === false) {
@@ -66,28 +84,20 @@ const Nav = () => {
               className="mobileMenu__list-item mobileMenu__link"
               onClick={handleCv}
             >
-              {/*     <a
-                className="mobileMenu__link"
-                href="https://drive.google.com/file/d/1hO-5MH8x3ULFs_eh_kc4Vgrgnbqp-qDm/view?usp=sharing"
-              >
-              
-              </a> */}
               Resume
             </li>
-            <li
-              className={`mobileMenu__list-item ${
-                cvDisplay ? "cvList-mobile" : "cvList-disable"
-              }`}
-            >
-              <a
-                rel="noopener noreferrer"
-                target="_blank"
-                className="mobileMenu__link"
-                href="https://drive.google.com/file/d/1hO-5MH8x3ULFs_eh_kc4Vgrgnbqp-qDm/view?usp=sharing"
+            {links.jbob.cvLinks.map((cv) => (
+              <li
+                ref={dropdownRef}
+                className={`mobileMenu__list-item ${
+                  cvDisplay ? "cvList-mobile" : "cvList-disable"
+                }`}
               >
-                Spanish
-              </a>
-            </li>
+                <a rel="noopener noreferrer" target="_blank" href={cv.link}>
+                  {cv.language}
+                </a>
+              </li>
+            ))}
           </ul>
         </nav>
       </div>
@@ -132,16 +142,22 @@ const Nav = () => {
             </li>
             <li className="menu__list-item" onClick={handleCv}>
               <span className="menu__list-resume">Resume</span>
-              <div className={`${cvDisplay ? "cvList" : "cvList-disable"}`}>
+              <div
+                ref={dropdownRef}
+                className={`${cvDisplay ? "cvList" : "cvList-disable"}`}
+              >
                 <ul>
-                  <li>
-                    <a rel="noopener noreferrer" target="_blank" href={cvRoute}>
-                      Spanish
-                    </a>
-                  </li>
-                  {/*    <li>
-                    <a href={cvRoute}>English</a>
-                  </li> */}
+                  {links.jbob.cvLinks.map((cv) => (
+                    <li>
+                      <a
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        href={cv.link}
+                      >
+                        {cv.language}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </li>
@@ -160,12 +176,12 @@ const Nav = () => {
         <MediaQuery minWidth={1000}>
           <ul className="menu__social">
             <li className="menu__social-item">
-              <a className="menu__social-link" href={links.lance.linkedin}>
+              <a className="menu__social-link" href={links.jbob.linkedin}>
                 <LinkedInIcon />
               </a>
             </li>
             <li className="menu__social-item">
-              <a className="menu__social-link" href={links.lance.github}>
+              <a className="menu__social-link" href={links.jbob.github}>
                 <GitHubIcon />
               </a>
             </li>

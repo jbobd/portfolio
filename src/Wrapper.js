@@ -40,8 +40,8 @@ const Wrapper = () => {
           </SimpleReactLightbox>
         </Switch>
         <Footer
-          linkedin={links.lance.linkedin}
-          github={links.lance.github}
+          linkedin={links.jbob.linkedin}
+          github={links.jbob.github}
           cvRoute={cvRoute}
         />
       </ScrollToTop>

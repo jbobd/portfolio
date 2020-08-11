@@ -214,15 +214,8 @@ and (max-height: 568px) {
     }
 
     .footer {
-
-        &__gabby {
+        &__jbob{
             margin: 0;
-        }
-
-        &__lance {
-            margin: 0;
-        }
-        &__lance, &__gabby {
             display: flex;
             flex-direction: column;
             justify-content: center;
